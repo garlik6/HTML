@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Запись на курсы</title>
+</head>
+
+<body>
+  <h3>Запись на курсы</h3>
+  <hr>
+  <form action="/my-handling-form-page" method="post">
+    <p>
+      <label for="name">Имя:</label>
+      <br>
+      <input type="text" id="name" name="user_name">
+    </p>
+    <fieldset>
+      <legend>Язык программирования</legend>
+      <p>
+        <input type="radio" name="language" id="lang_1" value="cpp">
+        <label for="lang_1">C++</label>
+      </p>
+      <p>
+        <input type="radio" name="language" id="lang_2" value="java">
+        <label for="lang_2">Java</label>
+      </p>
+      <p>
+        <input type="radio" name="language" id="lang_3" value="php">
+        <label for="lang_3">PHP</label>
+      </p>
+    </fieldset>
+    <p>
+      <label for="msg">Дополнительная информация</label>
+      <br>
+      <textarea id="msg" name="user_message" rows="4" cols="35"></textarea>
+    </p>
+    <p>
+      <label for="secret">Password:</label>
+      <br>
+      <input type="password" id="secret" name="user_secret">
+    </p>
+    <p class="button">
+      <button type="submit">Отправить</button>
+      <button type="reset">Очистить</button>
+    </p>
+  </form>
+  <hr>
+</body>
+
+</html>
